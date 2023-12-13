@@ -1,0 +1,7 @@
+git init
+git add .
+git commit -m "commit changes message."
+git remote add source https://github.com/Jagdishsinghdhami/full_javascript_course.git
+git remote -v
+ git branch -M master
+  git push -u origin master
