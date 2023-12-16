@@ -123,4 +123,69 @@ const hundreds = 10000000;
 const min = 10;
 const max = 20;
 
-console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+// console.log(Math.floor(Math.random() * (max - min + 1)) + min);
+
+//  ******************** Date & Time *********************
+
+let myDate = new Date();
+// console.log(myDate);
+// console.log(myDate.toDateString());
+// console.log(myDate.toLocaleString());
+
+// let myCreatedDate = new Date(2023, 11, 11);
+// console.log(myCreatedDate);
+
+// let myStamp = Date.now();
+// console.log(myStamp);
+
+// *********************** Arrays *********************
+
+let myArr = [1, 2, 3, 4, 5];
+
+// slice & splice
+
+// console.log("A ", myArr);
+
+// const myArr1 = myArr.slice(1, 3);
+
+// console.log(myArr1); // [2, 3]
+
+// console.log("slice => ", myArr); // [1,2, 3,4,5]
+
+// slice method : original array ko mainuplate nhi karta hai
+// splice method : original array ko mainuplate karta hai .
+
+// const myArr2 = myArr.splice(1, 3);
+// console.log(myArr2); // [2, 3, 4]
+// console.log(" splice method => ", myArr); // [1, 5]
+
+const marvel_heros = ["thor", "iron man", "hulk"];
+const dc_heros = ["superman", "flash", "batman"];
+// marvel_heros.push(dc_heros);
+
+// console.log(marvel_heros);
+// console.log(dc_heros);
+
+const allHeros = marvel_heros.concat(dc_heros);
+// console.log(allHeros);
+
+// sppread methods : add more than two array
+
+const spreadArray = [...marvel_heros, ...dc_heros];
+// console.log(spreadArray);
+
+// flat array : all array in one lines
+
+const anotherArray = [1, 2, [3, 4, 5], 6, [7, 8, 9, [2, 3, 5, [6, 5, 7]]]];
+const newAnotherArray = anotherArray.flat(Infinity);
+// console.log(newAnotherArray);
+// console.log(anotherArray);
+
+// console.log(Array.isArray("jagdish")); // false
+// console.log(Array.from("jagdish")); // ['j', 'a', 'g', 'd', 'i', 's', 'h']
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1, score2, score3));
